@@ -14,3 +14,18 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.slick-slider {
+  position: relative;
+}
+.slick-slider .slick-prev, .slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 999;
+}
+.slick-slider .slick-prev {
+  left: 1rem;
+}
+.slick-slider .slick-next {
+  right: 1rem;
+}

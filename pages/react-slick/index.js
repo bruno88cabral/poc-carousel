@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Slider from 'react-slick';
+import Image from 'next/image';
 
 const ReactSlick = () => {
     const [ slidesToShow, setSlidesToShow ] = useState(1)
@@ -27,7 +28,7 @@ const ReactSlick = () => {
             <Slider {...props}>
                 {arr.map((number, i) => (
                     <div key={i}>
-                        <img src={`https://s3.amazonaws.com/static.neostack.com/img/react-slick/abstract0${number}.jpg`} />
+                        <Image src={`https://s3.amazonaws.com/static.neostack.com/img/react-slick/abstract0${number}.jpg`} width={400} height={300} />
                     </div>
                 ))}
             </Slider>

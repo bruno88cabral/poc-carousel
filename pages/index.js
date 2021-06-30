@@ -6,7 +6,7 @@ import ProductCard from '../components/product-card'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+  <div className="home">
         <Link href="/react-slick">
           <a>
             <ProductCard>

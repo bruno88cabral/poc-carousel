@@ -6,6 +6,18 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+.home {
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .home {
+    grid-template-columns: 100%;
+  }
+}
+
 label { display: block;}
 
 h1 {
@@ -69,8 +81,9 @@ a {
  }
 
  .product-card {
+    max-width: 80%;
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
-    margin: 2rem;
+    margin: 2rem auto;
     text-align: center;
     padding: 2rem;
 }

@@ -6,6 +6,12 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+label { display: block;}
+
+h1 {
+  text-align: center;
+}
+
 h2 {
   margin-top: 5rem;
 }

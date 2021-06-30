@@ -17,15 +17,18 @@ const ReactSlick = () => {
     })
 
     const arr = [1,2,3,4];
-      return (
+    const url = number =>
+        `https://s3.amazonaws.com/static.neostack.com/img/react-slick/abstract0${number}.jpg`
+    return (
       <>
+            <h1>React Slick</h1>
             <div className="form-group">
                 <div className="form-input">
                     <label htmlFor="slidesToShow">Slide to show</label>
                     <input
                         id="slidesToShow"
                         name="slidesToShow"
-                        type="text"
+                        type="number"
                         placeholder="slides to show"
                         value={slidesToShow}
                         onChange={({ target }) => setSlidesToShow(Number(target.value))}
@@ -55,7 +58,7 @@ const ReactSlick = () => {
                     {arr.map((number, i) => (
                         <div key={i}>
                             <Image 
-                                src={`https://s3.amazonaws.com/static.neostack.com/img/react-slick/abstract0${number}.jpg`} 
+                                src={url(number)} 
                                 width={400} 
                                 height={300}
                             />
@@ -70,7 +73,7 @@ const ReactSlick = () => {
                     {arr.map((number, i) => (
                         <div key={i}>
                             <Image 
-                                src={`https://s3.amazonaws.com/static.neostack.com/img/react-slick/abstract0${number}.jpg`} 
+                                src={url(number)}  
                                 width={400} 
                                 height={300}
                             />
@@ -83,7 +86,15 @@ const ReactSlick = () => {
             <div className="container">
                 <Slider {...props}>
                     {arr.map((number, i) => (
-                        <ProductCard number={number} key={i} />
+                        <ProductCard number={number} key={i}>
+                            <Image 
+                                src={url(number)}  
+                                width={200} 
+                                height={150}
+                            />
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <h3> R$ 162,96 </h3>
+                        </ProductCard>
                     ))}
                 </Slider>
             </div>

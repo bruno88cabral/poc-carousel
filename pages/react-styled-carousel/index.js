@@ -14,7 +14,7 @@ const ReactStyledCarousel = () => {
   const url = number =>
       `https://s3.amazonaws.com/static.neostack.com/img/react-slick/abstract0${number}.jpg`
   return (
-    <Slider responsive={responsive} showDots={false}>
+    <Slider responsive={responsive} showDots={false} autoSlide={false}>
       {arr.map((number, i) => (
           <div key={i}>
               <Image 

@@ -17,6 +17,8 @@ export default function Home() {
               <p>unpacked size: 764 kB</p>
               <p>maintained: yes</p>
               <p>ssr supports: yes</p>
+
+              <p>obs:</p>
             </ProductCard>
           </a>
         </Link>
@@ -31,6 +33,8 @@ export default function Home() {
               <p>unpacked size: 754 kB</p>
               <p>maintained: yes</p>
               <p>ssr supports: yes</p>
+
+              <p>obs: aparentar ser facil de customizar, pois cada um dos components que compõe o carousel (dots, arrows, itens etc..) tem um callback de render para facilitar essa customização</p>
             </ProductCard>
           </a>
         </Link>
